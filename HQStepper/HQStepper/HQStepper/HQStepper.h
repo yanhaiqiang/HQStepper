@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface HQStepper : UIControl
-@property (strong, nonatomic) UIColor *tintColor;
-@property (assign, nonatomic) double minimumValue;
-@property (assign, nonatomic) double maximumValue;
-@property (assign, nonatomic) double stepValue;
+@property (strong, nonatomic) UIColor *tintColor;//字体颜色
+@property (assign, nonatomic) double minimumValue;//最小值
+@property (assign, nonatomic) double maximumValue;//最大值
+@property (assign, nonatomic) double stepValue;//每次加减的值
 @property (assign, nonatomic, getter=isContinuous) BOOL continuous;
-@property (assign, nonatomic) BOOL wraps;
+@property (assign, nonatomic) BOOL wraps;//循环到最大值返回到最小值
 @property (assign, nonatomic) BOOL autorepeat;
 @property (assign, nonatomic) double autorepeatInterval;
-@property (copy, nonatomic) NSString *accessibilityTag;
+@property (copy, nonatomic) NSString *accessibilityTag;// tag 值
 - (void)setValue:(double)value;
 - (double)value;
 - (NSNumber *)valueObject;
