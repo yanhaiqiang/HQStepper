@@ -8,8 +8,10 @@
 
 2.可设置按钮圆角
 [self.stepper3 setCornerRadius:20.0f];
+
 3.设置按钮背景色
 [[self.stepper2 setTintColor:[UIColor redColor];
+
 4.设置循环
 self.stepper3.wraps = YES; //循环，到最大值后返回到最小值
 
